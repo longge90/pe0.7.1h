@@ -52,7 +52,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup ~/haxelib
-          haxelib install hxcpp 4.2.1 > /dev/null
+          haxelib install hxcpp
           haxelib install lime
           haxelib install openfl
           haxelib --never install flixel
@@ -62,7 +62,6 @@ jobs:
           haxelib install flixel-addons
           haxelib install tjson
           haxelib install hxjsonast
-          haxelib install hxcpp
           haxelib install SScript 4.1.0
           haxelib git hxCodec https://github.com/SPLCoding/hxCodec-but-it-works-xd.git
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
